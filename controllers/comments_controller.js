@@ -5,7 +5,6 @@ const queue = require('../config/kue');
 const commentEmailWorker = require('../workers/comment_email_worker');
 const Like = require('../model/like');
 
-
 module.exports.create = async function(req, res) {
 
     try {
