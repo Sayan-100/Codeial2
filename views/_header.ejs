@@ -1,0 +1,49 @@
+<!-- <link rel="stylesheet" href="/css/home.css"> -->
+<link rel="stylesheet" href="<%= assetPath('css/home.css') %>">
+<header>
+    <!-- page header -->
+
+    <div id="nav-menu">
+        <div id="nav-name">
+            <span id="nav-icon">
+                <a href="/">
+                Codeial
+                </a>
+            </span>
+        </div>
+
+        <ul>
+            <div class="nav-element">
+                <% if(locals.user){ %>
+
+                    <a href="/users/profile/<%=user.id%>">
+                        <li>
+                            <%= user.name  %>
+                        </li>
+                    </a>
+
+                    <li>
+                        <a href="/users/sign-out">
+                    Sign Out
+                </a>
+                    </li>
+            </div>
+            <% }else{ %>
+
+                <div class="nav-element">
+                    <li>
+                        <a href="/users/sign-in">
+                        Sign In
+                    </a>
+                    </li>
+
+                    <li>
+                        <a href="/users/sign-up">
+                        Sign Up
+                    </a>
+                    </li>
+                    <% } %>
+                </div>
+        </ul>
+    </div>
+</header>

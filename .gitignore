@@ -1,0 +1,11 @@
+node_modules/
+uploads/
+production_logs/*
+dump.rdb
+package-lock.json
+.history
+codeial-prod.pem
+codeial-prod2.pem
+codeial-produc.pem
+codeial-produc2.2.pem
+codeial-produc2.ppk
